@@ -1,0 +1,58 @@
+
+
+v0.1 prototayp
+
+project/
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+├── backend/
+│   ├── api/
+│   │   ├── save_task.php
+│   │   └── get_tasks.php
+│   └── cpp_processor/
+│       ├── task_analyzer.cpp
+│       └── build/
+└── database/
+    └── schema.sql
+    ######################################################################
+    v1.0
+    ######################################################################
+   
+   
+    project/
+├── frontend/
+│   ├── html/
+│   │   ├── index.html          # Login Page
+│   │   ├── dashboard.html      # Main Dashboard
+│   │   └── workspace.html      # Workspace Page
+│   ├── css/
+│   │   ├── style.css           # Global styles
+│   │   ├── auth.css            # Login page styles
+│   │   ├── dashboard.css       # Dashboard specific styles
+│   │   └── workspace.css       # Workspace specific styles
+│   └── js/
+│       ├── auth.js             # Login/authentication logic
+│       ├── dashboard.js        # Dashboard functionality
+│       ├── workspace.js        # Workspace functionality
+│       ├── calendar.js         # Calendar management
+│       └── api.js              # API communication functions
+├── backend/
+│   ├── api/                    # (PHP)
+│   │   ├── auth/
+│   │   │   ├── login.php
+│   │   │   └── register.php
+│   │   ├── tasks/
+│   │   │   ├── save_task.php
+│   │   │   ├── get_tasks.php
+│   │   │   └── delete_task.php
+│   │   └── events/
+│   │       ├── save_event.php
+│   │       ├── get_events.php
+│   │       └── delete_event.php
+│   └── cpp_processor/          # (C++)
+│       ├── task_analyzer.cpp   # For future analytics
+│       └── build/
+└── database/
+    └── schema.sql              # Database creation scripts
