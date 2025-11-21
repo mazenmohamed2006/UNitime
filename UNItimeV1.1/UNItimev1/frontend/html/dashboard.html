@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRMS - Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-brand">STRMS</div>
+        <ul class="nav-menu">
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="workspace.html">Workspace</a></li>
+            <li><a href="#" id="aiAssistantBtn">AI Assistant</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <section class="welcome-section">
+            <h1>Welcome, <span id="userName">Student</span></h1>
+            <p id="currentDate"></p>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Upcoming Activities</h2>
+            <div id="timelineList" class="timeline-list">
+                <!-- TIMELINE IMPLEMENTATION: -->
+                <!-- Load and display upcoming tasks/events from API -->
+                <!-- Show priority indicators and due dates -->
+                <!-- Implement real-time updates -->
+            </div>
+        </section>
+
+        <section class="calendar-preview">
+            <h2>Calendar Overview</h2>
+            <div id="calendarPreview" class="calendar-widget">
+                <!-- CALENDAR PREVIEW IMPLEMENTATION: -->
+                <!-- Display current month with event indicators -->
+                <!-- Allow quick navigation to full calendar -->
+                <!-- Highlight today's date -->
+            </div>
+        </section>
+
+        <section class="quick-stats">
+            <h2>Quick Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 id="pendingTasks">0</h3>
+                    <p>Pending Tasks</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="upcomingEvents">0</h3>
+                    <p>Upcoming Events</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="completedToday">0</h3>
+                    <p>Completed Today</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Chat Modal -->
+    <div id="aiChatModal" class="modal">
+        <div class="modal-content ai-modal">
+            <span class="close">&times;</span>
+            <div id="aiChatContainer">
+                <!-- AI CHAT IMPLEMENTATION: -->
+                <!-- Will be loaded by ai_chat.js -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/ai_chat.js"></script>
+</body>
+</html>
