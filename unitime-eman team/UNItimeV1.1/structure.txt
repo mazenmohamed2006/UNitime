@@ -1,0 +1,54 @@
+
+    project/
+├── frontend/1
+│   ├── html/1
+│   │   ├── index.html          # Login Page  1
+│   │   ├── dashboard.html      # Main Dashboard1 
+│   │   └── workspace.html      # Workspace Page1
+│   ├── css/1
+│   │   ├── style.css           # Global styles 1
+│   │   ├── auth.css            # Login page styles 1
+│   │   ├── dashboard.css       # Dashboard specific styles 1
+│   │   └── workspace.css       # Workspace specific styles 1
+│   │   └── ai_chat.css         # AI Chat interface styles <-- NEW
+│   └── js/1
+│       ├── auth.js             # Login/authentication logic 1
+│       ├── dashboard.js        # Dashboard functionality 1
+│       ├── workspace.js        # Workspace functionality 1
+│       ├── calendar.js         # Calendar management 1
+│       └── api.js              # API communication functions 1
+│       └── ai_chat.js          # AI Chat functionality <-- NEW
+├── backend/1
+│   ├── config/
+│   │   └── database.php              # ← DATABASE CONFIG GOES HERE
+│   ├── api/1                    # (PHP)
+│   │   ├── auth/1
+│   │   │   ├── login.php 1
+│   │   │   └── register.php 1
+│   │   ├── tasks/1
+│   │   │   ├── save_task.php 1
+│   │   │   ├── get_tasks.php 1
+│   │   │   └── delete_task.php 1
+│   │   └── events/1
+│   │       ├── save_event.php
+│   │       ├── get_events.php
+│   │       └── delete_event.php
+│   │   └── ai/                 # <-- NEW DIRECTORY
+│   │       └── chat.php        # <-- NEW: Endpoint for DeepSeek API
+│   └── cpp_processor/ 1         # (C++)
+│       ├── task_analyzer.cpp   # For future analytics
+│       └── build/
+└── database/1
+    └── schema.sql 1             # Database creation scripts
+
+===================================================================
+    none = none
+    1= true = done need implement funcions 
+    2 = funcions name implemented need complet imnplemtion
+    3 = implement completed need tesring and intgrition
+    4= testing complet
+    5 intgrition completed
+    6 = need deployment
+    7 deploment done 
+    8 completed 
+===================================================================
