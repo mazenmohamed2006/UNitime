@@ -1,0 +1,60 @@
+/* ========== AUTHENTICATION STYLES ========== */
+/* AUTH CONTAINER IMPLEMENTATION: */
+/* Style login/register container */
+/* Add background and card styling */
+/* Implement responsive auth forms */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
+    padding: 1rem;
+}
+
+.auth-card {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-card h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+/* FORM SPECIFIC STYLES IMPLEMENTATION: */
+/* Style auth-specific form elements */
+/* Add password visibility toggle */
+/* Implement error message styling */
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form-actions {
+    margin-top: 1.5rem;
+}
+
+/* RESPONSIVE AUTH IMPLEMENTATION: */
+/* Adjust auth layout for mobile */
+/* Optimize touch targets for mobile */
+/* Ensure proper spacing on small screens */
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,147 @@
+/* ========== GLOBAL STYLES ========== */
+/* RESET AND BASE STYLES IMPLEMENTATION: */
+/* Define CSS variables for colors, fonts, spacing */
+/* Implement responsive design breakpoints */
+/* Add base typography styles */
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #64748b;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+    --background-color: #f8fafc;
+    --surface-color: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background-color);
+}
+
+/* NAVIGATION IMPLEMENTATION: */
+/* Style main navigation bar */
+/* Implement mobile hamburger menu */
+/* Add active state styling */
+
+.main-nav {
+    background: var(--surface-color);
+    box-shadow: var(--shadow);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+/* BUTTON STYLES IMPLEMENTATION: */
+/* Define primary, secondary button styles */
+/* Add hover and active states */
+/* Implement responsive button sizes */
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-secondary {
+    background: var(--surface-color);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* FORM STYLES IMPLEMENTATION: */
+/* Style form inputs, labels, and groups */
+/* Add validation states */
+/* Implement responsive form layout */
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/* MODAL STYLES IMPLEMENTATION: */
+/* Style modal overlay and content */
+/* Add animation for modal appearance */
+/* Implement responsive modal sizing */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: var(--surface-color);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* RESPONSIVE DESIGN IMPLEMENTATION: */
+/* Add media queries for mobile devices */
+/* Implement flexible grid systems */
+/* Adjust navigation for mobile view */
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+}

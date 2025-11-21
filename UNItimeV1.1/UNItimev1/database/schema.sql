@@ -1,0 +1,10 @@
+-- ========== DATABASE SCHEMA FOR STRMS ========== --
+-- TODO: Create database if not exists
+-- TODO: Create users table with id, name, email, password, timestamps
+-- TODO: Create tasks table with id, user_id, title, description, progress, due_date, priority, timestamps
+-- TODO: Create events table with id, user_id, title, description, date, time, timestamps
+-- TODO: Create user_tokens table for authentication
+-- TODO: Create ai_conversations table for chat history
+-- TODO: Add foreign key constraints
+-- TODO: Create indexes for performance
+-- TODO: Insert sample data for testing
